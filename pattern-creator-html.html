@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Pattern Creator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="controls">
+            <h2>Pattern Creator</h2>
+            <select id="patternType">
+                <option value="dots">Dots</option>
+                <option value="lines">Lines</option>
+                <option value="circles">Circles</option>
+            </select>
+            <input type="color" id="colorPicker" value="#4CAF50">
+            <button id="generateBtn">Generate Pattern</button>
+            <button id="exportPNG">Export PNG</button>
+            <button id="exportSVG">Export SVG</button>
+        </div>
+        <div class="pattern-container">
+            <canvas id="patternCanvas"></canvas>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
